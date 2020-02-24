@@ -11,7 +11,7 @@ namespace Horizonx2
 {
     public class EksiEntryView : ContentPage
     {
-        private EksiEntry _entry;
+        private readonly EksiEntry _entry;
         public EksiEntryView(EksiEntry entry, bool canBeFavorited)
         {
             _entry = entry;

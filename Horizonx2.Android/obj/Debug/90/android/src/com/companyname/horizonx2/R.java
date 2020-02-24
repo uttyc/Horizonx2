@@ -25,10 +25,22 @@ public final class R {
     public static final int design_bottom_sheet_slide_out=0x7f01000d;
     public static final int design_snackbar_in=0x7f01000e;
     public static final int design_snackbar_out=0x7f01000f;
-    public static final int enterfromleft=0x7f010010;
-    public static final int enterfromright=0x7f010011;
-    public static final int exittoleft=0x7f010012;
-    public static final int exittoright=0x7f010013;
+    public static final int enter_bottom=0x7f010010;
+    public static final int enter_left=0x7f010011;
+    public static final int enter_right=0x7f010012;
+    public static final int enter_top=0x7f010013;
+    public static final int enterfromleft=0x7f010014;
+    public static final int enterfromright=0x7f010015;
+    public static final int exit_bottom=0x7f010016;
+    public static final int exit_left=0x7f010017;
+    public static final int exit_right=0x7f010018;
+    public static final int exit_top=0x7f010019;
+    public static final int exittoleft=0x7f01001a;
+    public static final int exittoright=0x7f01001b;
+    public static final int fade_in=0x7f01001c;
+    public static final int fade_out=0x7f01001d;
+    public static final int flip_in=0x7f01001e;
+    public static final int flip_out=0x7f01001f;
   }
   public static final class animator {
     public static final int design_appbar_state_list_animator=0x7f020000;
@@ -17871,7 +17883,10 @@ public final class R {
      */
     public static final int ViewStubCompat_android_inflatedId=2;
   }
+  public static final class transition {
+    public static final int navigation_transition=0x7f100000;
+  }
   public static final class xml {
-    public static final int xamarin_essentials_fileprovider_file_paths=0x7f100000;
+    public static final int xamarin_essentials_fileprovider_file_paths=0x7f110000;
   }
 }

@@ -11,18 +11,9 @@ namespace Horizonx2.Views
         [Obsolete]
         public EntryViewCell()
         {
-            Label header = new Label
-            {
-                TextColor = Color.Brown
-            };
-            Label likes = new Label
-            {
-                TextColor = Color.Crimson
-            };
-            Label author = new Label
-            {
-                TextColor = Color.RosyBrown
-            };
+            Label header = new Label { TextColor = Color.Brown };
+            Label likes = new Label { TextColor = Color.Crimson };
+            Label author = new Label { TextColor = Color.RosyBrown };
             Grid grid = new Grid
             {
                 Padding = new Thickness(10),

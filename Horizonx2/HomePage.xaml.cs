@@ -1,5 +1,6 @@
 ﻿using Horizonx2.Data;
 using Horizonx2.Models;
+using Horizonx2.Views;
 using HtmlAgilityPack;
 using SQLite;
 using System;
@@ -72,6 +73,7 @@ namespace Horizonx2
             });
             EntriesList.ItemsSource = entries;
             
+            //EntriesList.ItemTemplate = new DataTemplate(typeof(EntryViewCell));
             //customCell.SetBinding(EntryViewCell.ContentThumbnailProperty, "ContentThumbnail");
             //customCell.SetBinding(EntryViewCell.LikesProperty, "Likes");
             //customCell.SetBinding(EntryViewCell.AuthorProperty, "Author");
