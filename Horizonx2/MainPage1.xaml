@@ -31,7 +31,6 @@
 
     <!--<ShellContent Title="About" Icon="one.png" ContentTemplate="{DataTemplate local:Page1}"/>-->
 
-
     <!--<FlyoutItem Title="Home" Shell.ForegroundColor="Green"  Shell.BackgroundColor="Pink"   Shell.TabBarIsVisible="True" Shell.TabBarBackgroundColor="White" Shell.TabBarTitleColor="Green" Shell.TabBarDisabledColor="Gray" Shell.TabBarForegroundColor="White" Shell.TabBarUnselectedColor="Gray">
         <FlyoutItem.Icon>
             <FontImageSource
