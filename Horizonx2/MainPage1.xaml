@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Shell 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Horizonx2"
+    x:Class="Horizonx2.MainPage1">
+
+    <Shell.FlyoutHeader>
+        <local:HeaderContentView/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="MyTabApp"
+               Shell.TabBarIsVisible="False"
+               FlyoutDisplayOptions="AsMultipleItems">
+
+        <Tab Title="Ana Sayfa">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+        </Tab>
+
+
+    </FlyoutItem>
+    <FlyoutItem Title="MyTabApp"
+               Shell.TabBarIsVisible="False"
+               FlyoutDisplayOptions="AsMultipleItems">
+
+        <Tab Title="Favoriler">
+            <ShellContent ContentTemplate="{DataTemplate local:Favs}"/>
+        </Tab>
+
+    </FlyoutItem>
+
+    <!--<ShellContent Title="About" Icon="one.png" ContentTemplate="{DataTemplate local:Page1}"/>-->
+
+
+    <!--<FlyoutItem Title="Home" Shell.ForegroundColor="Green"  Shell.BackgroundColor="Pink"   Shell.TabBarIsVisible="True" Shell.TabBarBackgroundColor="White" Shell.TabBarTitleColor="Green" Shell.TabBarDisabledColor="Gray" Shell.TabBarForegroundColor="White" Shell.TabBarUnselectedColor="Gray">
+        <FlyoutItem.Icon>
+            <FontImageSource
+            FontFamily="{StaticResource MaterialFont}"
+            Glyph="&#xf077;"
+             Color="Red"
+            Size="24" />
+        </FlyoutItem.Icon>
+        <Tab Title="Bat">
+            <Tab.Icon>
+                <FontImageSource
+            FontFamily="{StaticResource MaterialFont}"
+            Glyph="&#xf077;"
+            
+            Size="24" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate settings:MainPage}">
+            </ShellContent>
+        </Tab>
+        <Tab Title="Mat">
+            <Tab.Icon>
+                <FontImageSource
+            FontFamily="{StaticResource MaterialFont}"
+            Glyph="&#xf077;"
+            Size="24" />
+            </Tab.Icon>
+            <ShellContent ContentTemplate="{DataTemplate settings:MainPage}">
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>-->
+
+
+</Shell>
