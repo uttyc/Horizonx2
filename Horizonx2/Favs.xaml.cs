@@ -18,6 +18,7 @@ namespace Horizonx2
         public Favs()
         {
             InitializeComponent();
+            RefreshList();
             FavList.RefreshCommand = new Command(() =>
             {
                 //Do your stuff.
@@ -27,15 +28,10 @@ namespace Horizonx2
             //FavList.ItemTemplate = new DataTemplate(typeof(EntryViewCell));
 
 
-            RefreshList();
         }
         public void RefreshList()
         {
-            var entries = new List<EksiEntry>();
-            using (var con = new SQLiteConnection(App.FilePath))
-            {
-                entries = con.Table<EksiEntry>().ToList();
-            }
+            var entries = App.Database.GetFavsAsync;
             FavList.ItemsSource = entries;
         }
         private void FavList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -45,8 +41,8 @@ namespace Horizonx2
             //{
             //    con.DeleteAll<EksiEntry>();
             //}
-            //DisplayAlert(entry.Header, entry.Content, "Tamam");
-           Navigation.PushAsync(new EksiEntryView(entry));
+           // DisplayAlert(entry.Header, entry.Content, "Tamam");
+           Navigation.PushAsync(new EksiEntryView(entry, false));
 
 
         }

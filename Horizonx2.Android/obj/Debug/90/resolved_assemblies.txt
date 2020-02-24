@@ -9,6 +9,8 @@ D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\HtmlAgilityPa
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Java.Interop.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Mono.Android.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\mscorlib.dll
+D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Plugin.Toast.Abstractions.dll
+D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Plugin.Toast.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\SQLite-net.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_green.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_v2.dll

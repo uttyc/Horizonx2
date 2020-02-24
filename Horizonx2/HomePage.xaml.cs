@@ -71,6 +71,7 @@ namespace Horizonx2
                 EntriesList.IsRefreshing = false;
             });
             EntriesList.ItemsSource = entries;
+            
             //customCell.SetBinding(EntryViewCell.ContentThumbnailProperty, "ContentThumbnail");
             //customCell.SetBinding(EntryViewCell.LikesProperty, "Likes");
             //customCell.SetBinding(EntryViewCell.AuthorProperty, "Author");
@@ -80,16 +81,10 @@ namespace Horizonx2
         {
             var entry = e.SelectedItem as EksiEntry;
             //var eklenen = await App.database.SaveFavAsync(entry);
-            using (var con = new SQLiteConnection(App.FilePath))
-            {
+            Navigation.PushAsync(new EksiEntryView(entry, true));
 
-                var id = con.Insert(entry);
-                
-            }
-
-            DisplayAlert(entry.Header, entry.Content, "Tamam");
             //DisplayActionSheet(entry.Header, "Tamam", null, new string[] { "Favorilere Ekle" });
-            
+
         }
 
         /*

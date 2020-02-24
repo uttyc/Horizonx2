@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "7365f37ed9680ee9af67d159d0fff0a79e277485"
+    "signature": "69d39295b13a2fcdd3e9f677e01908263a7c7c90"
   },
   "compilationOptions": {},
   "targets": {
@@ -12,6 +12,7 @@
           "CarouselView.FormsPlugin": "5.2.0",
           "HtmlAgilityPack": "1.11.18",
           "NETStandard.Library": "2.0.3",
+          "Plugin.Toast": "2.1.2",
           "Xamarin.Essentials": "1.1.0",
           "Xamarin.Forms": "4.1.0.555618",
           "sqlite-net-pcl": "1.7.302-beta"
@@ -47,6 +48,21 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Plugin.Toast/2.1.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard/Plugin.Toast.Abstractions.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          },
+          "lib/netstandard/Plugin.Toast.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -761,6 +777,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Plugin.Toast/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MwEte2uS1vm49Gov+CigJaaxK8f5fFTeWAzcrpbIKvctiN0zAjhjV8cwmRK0A2SetjkhnrL08/vILnN9p5WEqg==",
+      "path": "plugin.toast/2.1.2",
+      "hashPath": "plugin.toast.2.1.2.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

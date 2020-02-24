@@ -50,6 +50,10 @@
               "target": "Package",
               "version": "[5.2.0, )"
             },
+            "Plugin.Toast": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
               "version": "[28.0.0.1, )"
@@ -150,6 +154,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Plugin.Toast": {
+              "target": "Package",
+              "version": "[2.1.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

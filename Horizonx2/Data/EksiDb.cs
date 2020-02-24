@@ -7,36 +7,36 @@ using System.Threading.Tasks;
 
 namespace Horizonx2.Data
 {
-    class EksiDb
+    public class EksiDb
     {
-        readonly SQLiteAsyncConnection _db;
+        readonly SQLiteConnection _db;
 
         public EksiDb(string dbPath)
         {
-            _db = new SQLiteAsyncConnection(dbPath);
-            _db.CreateTableAsync<EksiEntry>().Wait();
+            _db = new SQLiteConnection(dbPath);
+            _db.CreateTable<EksiEntry>();
         }
-        public Task<List<EksiEntry>> GetFavsAsync => _db.Table<EksiEntry>().ToListAsync();
-        public Task<EksiEntry> GetFavAsync(int id)
+        public List<EksiEntry> GetFavsAsync => _db.Table<EksiEntry>().ToList();
+        public EksiEntry GetFavAsync(int id)
         {
             return _db.Table<EksiEntry>()
                             .Where(i => i.Id == id)
-                            .FirstOrDefaultAsync();
+                            .FirstOrDefault();
         }
-        public Task<int> SaveFavAsync(EksiEntry entry)
+        public int SaveFavAsync(EksiEntry entry)
         {
             if (entry.Id != 0)
             {
-                return _db.UpdateAsync(entry);
+                return _db.Update(entry);
             }
             else
             {
-                return _db.InsertAsync(entry);
+                return _db.Insert(entry);
             }
         }
-        public Task<int> DeleteFavAsync(EksiEntry entry)
+        public int DeleteFavAsync(EksiEntry entry)
         {
-            return _db.DeleteAsync(entry);
+            return _db.Delete(entry);
         }
     }
 }

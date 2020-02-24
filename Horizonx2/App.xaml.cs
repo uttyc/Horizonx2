@@ -8,26 +8,27 @@ namespace Horizonx2
 {
     public partial class App : Application
     {
-        //public EksiDb database;
-
-        //public static EksiDb Database
-        //{
-        //    get
-        //    {
-        //        if (database == null)
-        //        {
-        //            database = new EksiDb(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Favs.db3"));
-        //        }
-        //        return database;
-        //    }
-        //}
+        private static EksiDb database;
         public static string FilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Favs.db3");
+
+        public static EksiDb Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new EksiDb(FilePath);
+                }
+                return database;
+            }
+        }
         public App()
         {
             InitializeComponent();
             MainPage = new MainPage1();
             //Mas = new MasterDetailPage();
-
+            
+            
         }
 
         protected override void OnStart()

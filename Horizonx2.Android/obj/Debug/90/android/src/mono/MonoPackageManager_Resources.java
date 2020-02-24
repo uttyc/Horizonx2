@@ -10,6 +10,8 @@ public class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Horizonx2.dll",
 		"HtmlAgilityPack.dll",
+		"Plugin.Toast.Abstractions.dll",
+		"Plugin.Toast.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_green.dll",
 		"SQLitePCLRaw.batteries_v2.dll",

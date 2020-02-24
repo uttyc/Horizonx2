@@ -6,6 +6,9 @@
              mc:Ignorable="d"
              x:Class="Horizonx2.App">
     <Application.Resources>
-
+        <OnPlatform x:TypeArguments="x:String" x:Key="Source-Sans-Pro">
+            <On Platform="Android" Value="source-sans-pro.light.ttf#Source-Sans-Pro" />
+            <On Platform="UWP" Value="/Assets/Fonts/source-sans-pro.light.ttf#Source-Sans-Pro" />
+        </OnPlatform>
     </Application.Resources>
 </Application>
