@@ -2,6 +2,7 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,7 +17,13 @@ namespace Horizonx2.Data
             _db = new SQLiteConnection(dbPath);
             _db.CreateTable<EksiEntry>();
         }
-        public List<EksiEntry> GetFavsAsync => _db.Table<EksiEntry>().ToList();
+        //public List<EksiEntry> GetFavsAsync => _db.Table<EksiEntry>().ToList();
+        public ObservableCollection<EksiEntry> GetFavsAsync() {
+            
+            var list = _db.Table<EksiEntry>().ToList();
+            var collection = new ObservableCollection<EksiEntry>(list);
+            return collection;
+        }
         public EksiEntry GetFavAsync(int id)
         {
             return _db.Table<EksiEntry>()

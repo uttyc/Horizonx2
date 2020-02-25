@@ -4,60 +4,61 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:local="clr-namespace:Horizonx2;assembly=Horizonx2"
              x:Class="Horizonx2.HomePage"
-             Title="Ekşi Sözlük">
+             Title="Tatlı Cümle">
+    
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <!--<Button HorizontalOptions="Center" VerticalOptions="Center" Text="Random Entry" Clicked="Button_Clicked"></Button>-->
 
-    <StackLayout>
-    <!--<Button HorizontalOptions="Center" VerticalOptions="Center" Text="Random Entry" Clicked="Button_Clicked"></Button>-->
+            <ListView x:Name="EntriesList"
+                      VerticalOptions="FillAndExpand" 
+                      ItemSelected="EntriesList_ItemSelected" 
+                      IsPullToRefreshEnabled="True" 
+                      HasUnevenRows="true"
+                      SeparatorVisibility="None"
+                      CachingStrategy="RecycleElement"
+                      BackgroundColor="White">
 
-        <ListView x:Name="EntriesList" ItemSelected="EntriesList_ItemSelected" IsPullToRefreshEnabled="True">
-            <!--<ListView.ItemTemplate>
-                <DataTemplate>
-                    --><!--<TextCell Text="{Binding Header}"
-                              Detail="{Binding Likes}"
-                              TextColor="#f35e20"
-                              DetailColor="#503026" />
-                    --><!--<local:EntryViewCell ContentThumbnail="{Binding ContentThumbnail}" />--><!--
-                    
-                    
-                </DataTemplate>
-            </ListView.ItemTemplate>-->
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <!--<TextCell Text="{Binding Header}"
-                              Detail="{Binding Likes}"
-                              TextColor="#f35e20"
-                              DetailColor="#503026" />-->
-                    <ViewCell Height="100">
-                        <StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+
+                        <ViewCell>
+                            <!--<StackLayout Margin="20,0,0,0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                             <Label Text="{Binding Header}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
                             <Label Text="{Binding Likes}" HorizontalOptions="End" IsVisible="True" />
-                        </StackLayout>
-                    </ViewCell>
-                    <!--<local:EntryViewCell />-->
-                    <!--<ViewCell>
-                        
-                        <Grid ColumnSpacing="0" RowSpacing="0">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*" />
-                                <ColumnDefinition Width="*" />
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*" />
-                                <RowDefinition Height="*" />
-                            </Grid.RowDefinitions>
-                            <Label Text="{Binding Likes}" TextColor="White" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="1" BackgroundColor="Maroon"/>
-                            <Label Text="{Binding Header}" TextColor="Maroon" Grid.Row="0" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="4" FontSize="10"/>
-                            <Label Text="{Binding Author}" TextColor="Purple" Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="4" FontSize="7"/>
-                        </Grid>
-                    </ViewCell>-->
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
+                        </StackLayout>-->
+                            <Frame Padding="0" Margin="5" CornerRadius="0" HasShadow="True" BorderColor="White">
+                                <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
+                                    <BoxView Color="{Binding Color}" WidthRequest="10" Margin="0" />
+                                    <Grid VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0" VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                            </Grid.RowDefinitions>
+                                            <Label FontAttributes="Bold" Grid.Row="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Default" Text="{Binding Header}" Margin="0" />
+                                            <Label Grid.Row="1" VerticalTextAlignment="Start" FontSize="Small" Text="{Binding Author}"  Margin="0" />
+                                            <StackLayout Grid.Row="2" Orientation="Horizontal">
+                                                <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Micro" Text="{Binding Likes}"/>
+                                                <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" HorizontalOptions="EndAndExpand" FontSize="Micro" Text="{Binding PublishDate}"/>
+                                            </StackLayout>
+                                        </Grid>
+                                        
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
 
-    
-
-
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

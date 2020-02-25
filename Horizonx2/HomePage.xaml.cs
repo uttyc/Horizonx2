@@ -1,7 +1,7 @@
 ﻿using Horizonx2.Data;
 using Horizonx2.Models;
-using Horizonx2.Views;
 using HtmlAgilityPack;
+using Plugin.Toast;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -11,12 +11,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace Horizonx2
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer
-    [DesignTimeVisible(false)]
+    //[DesignTimeVisible(false)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
         private bool _isRefreshing = false;
@@ -36,6 +38,9 @@ namespace Horizonx2
             RefreshData();
         }
 
+        
+
+
         private void RefreshData()
         {
             //var randomPage = new Random().Next(1, 3078);
@@ -47,6 +52,7 @@ namespace Horizonx2
             var topic = doc.DocumentNode.SelectSingleNode("//div[@id='topic']");
             var headers = topic.SelectNodes("//h1[@id='title']").ToList();
             var items = topic.SelectNodes("//ul[@id='entry-item-list']//li").ToList();
+            var dates = topic.SelectNodes("//a[@class='entry-date permalink']").ToList();
             var entries = new List<EksiEntry>();
             for (int i = 0; i < items.Count; i++)
             {
@@ -55,7 +61,8 @@ namespace Horizonx2
                     Header = headers[i].InnerText,
                     Author = items[i].GetAttributeValue("data-author", ""),
                     Content = items[i].InnerText,
-                    Likes = Convert.ToInt32(items[i].GetAttributeValue("data-favorite-count", "0"))
+                    Likes = Convert.ToInt32(items[i].GetAttributeValue("data-favorite-count", "0")),
+                    PublishDate = dates[i].InnerText
 
                 };
                 entries.Add(entry);
@@ -63,7 +70,7 @@ namespace Horizonx2
             //var nodeCollection = doc.DocumentNode.SelectNodes("//div[@class='wrapper']//li");
             //CarouselView.ItemsSource = entries;
 
-            
+
 
             EntriesList.RefreshCommand = new Command(() =>
             {
@@ -72,7 +79,7 @@ namespace Horizonx2
                 EntriesList.IsRefreshing = false;
             });
             EntriesList.ItemsSource = entries;
-            
+
             //EntriesList.ItemTemplate = new DataTemplate(typeof(EntryViewCell));
             //customCell.SetBinding(EntryViewCell.ContentThumbnailProperty, "ContentThumbnail");
             //customCell.SetBinding(EntryViewCell.LikesProperty, "Likes");

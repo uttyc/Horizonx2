@@ -5,8 +5,9 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  <application android:label="Horizonx2.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Horizonx2" android:theme="@style/MainTheme" android:name="md5fc472711688a045182af94239acea790.MainActivity">
+  <application android:label="Horizonx2.Android" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:theme="@style/MainTheme" android:name="md5fc472711688a045182af94239acea790.MainActivity" />
+    <activity android:icon="@mipmap/icon" android:label="SplashActivity" android:theme="@style/Theme.Splash" android:name="md5fc472711688a045182af94239acea790.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

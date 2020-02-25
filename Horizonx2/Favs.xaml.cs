@@ -1,5 +1,4 @@
 ﻿using Horizonx2.Models;
-using Horizonx2.Views;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -31,7 +30,7 @@ namespace Horizonx2
         }
         public void RefreshList()
         {
-            var entries = App.Database.GetFavsAsync;
+            var entries = App.Database.GetFavsAsync();
             FavList.ItemsSource = entries;
         }
         private void FavList_ItemSelected(object sender, SelectedItemChangedEventArgs e)

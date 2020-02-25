@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Toast;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -16,6 +17,20 @@ namespace Horizonx2
         public MainPage1()
         {
             InitializeComponent();
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            Device.BeginInvokeOnMainThread(async () =>
+            {
+                var sheet = await DisplayActionSheet("Uygulamayı Terk Etmek İstiyor Musunuz?", "Hayır", "Evet", new string[] { });
+                switch (sheet)
+                {
+                    case "Evet":
+                        System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
+                        break;
+                }
+            });
+            return true;
         }
     }
 }
