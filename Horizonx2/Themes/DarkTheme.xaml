@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="Horizonx2.Themes.DarkTheme">
+
+  
+    <Color x:Key="PageBackgroundColor">#313131</Color>
+    
+    <Color x:Key="NavigationBarColor">#1b262c</Color>
+
+    <Color x:Key="ListViewItemBackgroundColor">#4c4c4c</Color>
+    
+    <Color x:Key="ListViewPrimaryColor">#81C14B</Color>
+
+    <Color x:Key="ListViewSecondaryColor">#f1f3f4</Color>
+    
+</ResourceDictionary>

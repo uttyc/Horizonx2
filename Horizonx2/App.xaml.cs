@@ -25,6 +25,7 @@ namespace Horizonx2
         public App()
         {
             InitializeComponent();
+            ThemeManager.LoadTheme();
             MainPage = new MainPage1();
             //Mas = new MasterDetailPage();
             

@@ -3,6 +3,7 @@ Com.Android.DeskClock
 Com.ViewPagerIndicator
 FormsViewGroup
 GalaSoft.MvvmLight.Platform
+Plugin.Settings
 Plugin.SharedTransitions
 Plugin.Toast
 SkiaSharp

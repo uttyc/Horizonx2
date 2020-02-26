@@ -34,6 +34,7 @@ namespace Horizonx2
         public HomePage()
         {
             InitializeComponent();
+                     
 
             RefreshData();
         }

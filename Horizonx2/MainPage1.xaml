@@ -6,7 +6,7 @@
     x:Class="Horizonx2.MainPage1">
 
     <Shell.FlyoutHeader>
-        <local:HeaderContentView/>
+        <local:HeaderContentView BackgroundColor="{DynamicResource PrimaryColor}"/>
     </Shell.FlyoutHeader>
 
     <FlyoutItem Title="MyTabApp"
@@ -27,6 +27,13 @@
             <ShellContent ContentTemplate="{DataTemplate local:Favs}"/>
         </Tab>
 
+    </FlyoutItem>
+    <FlyoutItem Title="MyTabApp"
+                Shell.TabBarIsVisible="False"
+                FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Tema Değiştir">
+            <ShellContent ContentTemplate="{DataTemplate local:ThemeSelectPage}"/>
+        </Tab>
     </FlyoutItem>
 
     <!--<ShellContent Title="About" Icon="one.png" ContentTemplate="{DataTemplate local:Page1}"/>-->

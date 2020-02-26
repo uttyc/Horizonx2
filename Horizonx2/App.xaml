@@ -6,6 +6,26 @@
              mc:Ignorable="d"
              x:Class="Horizonx2.App">
     <Application.Resources>
+        <ResourceDictionary Source="Themes/LightTheme.xaml" />
+        <Style x:Key="PrimaryButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}"/>
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryTintColor}"/>
+            <Setter Property="HeightRequest" Value="40"/>
+            <Setter Property="WidthRequest" Value="200"/>
+            <Setter Property="CornerRadius" Value="20"/>
+        </Style>
+        <Style x:Key="TitleLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextColor" Value="{DynamicResource SecondaryTextColor}"/>
+        </Style>
+        <Style x:Key="BigLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="35"/>
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}"/>
+        </Style>
+        <Style x:Key="MediumLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}"/>
+        </Style>
         <OnPlatform x:TypeArguments="x:String" x:Key="Source-Sans-Pro">
             <On Platform="Android" Value="source-sans-pro.light.ttf#Source-Sans-Pro" />
             <On Platform="UWP" Value="/Assets/Fonts/source-sans-pro.light.ttf#Source-Sans-Pro" />

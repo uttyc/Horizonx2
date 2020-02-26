@@ -5,9 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Horizonx2.HomePage"
-             Title="Tatlı Cümle">
-    
-    
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+
     <ContentPage.Content>
         <StackLayout>
             <!--<Button HorizontalOptions="Center" VerticalOptions="Center" Text="Random Entry" Clicked="Button_Clicked"></Button>-->
@@ -19,7 +18,7 @@
                       HasUnevenRows="true"
                       SeparatorVisibility="None"
                       CachingStrategy="RecycleElement"
-                      BackgroundColor="White">
+                      BackgroundColor="{DynamicResource ListViewItemBackgroundColor}">
 
                 <ListView.ItemTemplate>
                     <DataTemplate >
@@ -29,31 +28,53 @@
                             <Label Text="{Binding Header}" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand" />
                             <Label Text="{Binding Likes}" HorizontalOptions="End" IsVisible="True" />
                         </StackLayout>-->
-                            <Frame Padding="0" Margin="5" CornerRadius="0" HasShadow="True" BorderColor="White">
-                                <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
+                            <!--<Frame Padding="0" Margin="5" CornerRadius="10" HasShadow="True" BorderColor="{DynamicResource PageBackgroundColor}">-->
+                                <StackLayout Orientation="Horizontal" Margin="2" Padding="0">
                                     <BoxView Color="{Binding Color}" WidthRequest="10" Margin="0" />
-                                    <Grid VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                    <Grid VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="{DynamicResource PageBackgroundColor}">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="Auto"/>
                                         </Grid.RowDefinitions>
-                                        <Grid Grid.Row="0" VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                        <Grid Grid.Row="0" VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="{DynamicResource PageBackgroundColor}">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="Auto"/>
                                                 <RowDefinition Height="Auto"/>
                                                 <RowDefinition Height="Auto"/>
                                             </Grid.RowDefinitions>
-                                            <Label FontAttributes="Bold" Grid.Row="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Default" Text="{Binding Header}" Margin="0" />
-                                            <Label Grid.Row="1" VerticalTextAlignment="Start" FontSize="Small" Text="{Binding Author}"  Margin="0" />
+                                            <Label FontAttributes="Bold" Grid.Row="0" 
+                                                   HorizontalTextAlignment="Start" 
+                                                   VerticalTextAlignment="Center" 
+                                                   FontSize="Default"
+                                                   TextColor="{DynamicResource ListViewPrimaryColor}"
+                                                   Text="{Binding Header}" 
+                                                   Margin="0" />
+                                            <Label Grid.Row="1" 
+                                                   VerticalTextAlignment="Start"
+                                                   FontSize="Small" 
+                                                   Text="{Binding Author}"
+                                                   TextColor="{DynamicResource ListViewSecondaryColor}"
+                                                   Margin="1" />
                                             <StackLayout Grid.Row="2" Orientation="Horizontal">
-                                                <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Micro" Text="{Binding Likes}"/>
-                                                <Label HorizontalTextAlignment="End" VerticalTextAlignment="End" HorizontalOptions="EndAndExpand" FontSize="Micro" Text="{Binding PublishDate}"/>
+                                                <Label HorizontalTextAlignment="Start"
+                                                       VerticalTextAlignment="Center"
+                                                       FontSize="Micro" 
+                                                       TextColor="{DynamicResource ListViewSecondaryColor}"
+                                                       Margin="1"
+                                                       Text="{Binding Likes}"/>
+                                                <Label HorizontalTextAlignment="End"
+                                                       VerticalTextAlignment="End"
+                                                       HorizontalOptions="EndAndExpand"
+                                                       FontSize="Micro"
+                                                       Margin="1"
+                                                       TextColor="{DynamicResource ListViewSecondaryColor}"
+                                                       Text="{Binding PublishDate}"/>
                                             </StackLayout>
                                         </Grid>
                                         
                                     </Grid>
                                 </StackLayout>
-                            </Frame>
+                            <!--</Frame>-->
                         </ViewCell>
 
                     </DataTemplate>

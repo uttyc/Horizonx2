@@ -15,6 +15,8 @@ public class MonoPackageManager_Resources {
 		"Horizonx2.dll",
 		"HtmlAgilityPack.dll",
 		"MvvmHelpers.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"Plugin.SharedTransitions.dll",
 		"Plugin.Toast.Abstractions.dll",
 		"Plugin.Toast.dll",

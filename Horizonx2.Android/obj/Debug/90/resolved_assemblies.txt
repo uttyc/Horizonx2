@@ -14,6 +14,8 @@ D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Java.Interop.
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Mono.Android.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\mscorlib.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\MvvmHelpers.dll
+D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Plugin.Settings.Abstractions.dll
+D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Plugin.Settings.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Plugin.SharedTransitions.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Plugin.Toast.Abstractions.dll
 D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\android\assets\Plugin.Toast.dll

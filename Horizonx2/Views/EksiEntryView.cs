@@ -28,11 +28,13 @@ namespace Horizonx2
                             new Label { Text = _entry.Header, TextColor = Color.FromRgb(129, 193, 75), FontSize = 25, Margin = new Thickness(5), FontAttributes = FontAttributes.Bold},
                             new ScrollView {
                                 Orientation = ScrollOrientation.Vertical,
-                                Content =  new Label { Text = _entry.Content, Margin = new Thickness(5), TextColor = Color.FromRgb(51,51,51) }  },
+                                Content =  new Label { Text = _entry.Content, Margin = new Thickness(5), TextColor = (Color) Application.Current.Resources["ListViewSecondaryColor"] }  },
                             canBeFavorited ? btnAddToFavs: btnRemoveFromFavs
-                        }
+                        },
                     }
-                }
+                },
+                BackgroundColor = (Color) Application.Current.Resources["PageBackgroundColor"]
+
             };
         }
 

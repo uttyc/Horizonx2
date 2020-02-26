@@ -17,6 +17,7 @@ namespace Horizonx2
         public MainPage1()
         {
             InitializeComponent();
+            
         }
         protected override bool OnBackButtonPressed()
         {
