@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="Horizonx2.HomePage"
              BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Title="Entryler"
              Shell.ForegroundColor="{DynamicResource ListViewPrimaryColor}">
     
     <ContentPage.Content>

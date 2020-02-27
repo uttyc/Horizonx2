@@ -10,19 +10,27 @@
     <Shell.FlyoutHeader>
         <local:HeaderContentView BackgroundColor="{DynamicResource ListViewSecondaryColor}" />
     </Shell.FlyoutHeader>
-    
-    
-    
 
-    <FlyoutItem Title="MyTabApp"
+
+    <TabBar>
+        <Tab Title="Ana Sayfa" Icon="home.png" Shell.TabBarIsVisible="True" Shell.TabBarTitleColor="{DynamicResource ListViewPrimaryColor}" Shell.TabBarUnselectedColor="{DynamicResource ListViewSecondaryColor}">
+            <ShellContent  ContentTemplate="{DataTemplate local:HomePage}"/>
+        </Tab>
+        <Tab Title="Favoriler" Icon="fav.png" Shell.TabBarIsVisible="True" Shell.TabBarTitleColor="{DynamicResource ListViewPrimaryColor}" Shell.TabBarUnselectedColor="{DynamicResource ListViewSecondaryColor}">
+            <ShellContent ContentTemplate="{DataTemplate local:Favs}"/>
+        </Tab>
+        <Tab Title="Tema Değiştir" Icon="change_theme.png" IsEnabled="True" Shell.TabBarIsVisible="True" Shell.TabBarTitleColor="{DynamicResource ListViewPrimaryColor}" Shell.TabBarUnselectedColor="{DynamicResource ListViewSecondaryColor}">
+            <ShellContent ContentTemplate="{DataTemplate local:ThemeSelectPage}"/>
+        </Tab>
+    </TabBar>
+
+    <!--<FlyoutItem Title="MyTabApp"
                Shell.TabBarIsVisible="False"
                FlyoutDisplayOptions="AsMultipleItems"
                 FlyoutIcon="home.png"
                 >
 
-        <Tab Title="Ana Sayfa" >
-            <ShellContent  ContentTemplate="{DataTemplate local:HomePage}"/>
-        </Tab>
+        
 
 
     </FlyoutItem>
@@ -31,19 +39,14 @@
                FlyoutDisplayOptions="AsMultipleItems"
                 FlyoutIcon="fav.png"
                 >
-
-        <Tab Title="Favoriler">
-            <ShellContent ContentTemplate="{DataTemplate local:Favs}"/>
-        </Tab>
+        
 
     </FlyoutItem>
     <FlyoutItem Title="MyTabApp"
                 Shell.TabBarIsVisible="False"
                 FlyoutDisplayOptions="AsMultipleItems">
-        <Tab Title="Tema Değiştir">
-            <ShellContent ContentTemplate="{DataTemplate local:ThemeSelectPage}"/>
-        </Tab>
-    </FlyoutItem>
+       
+    </FlyoutItem>-->
 
     <!--<ShellContent Title="About" Icon="one.png" ContentTemplate="{DataTemplate local:Page1}"/>-->
 

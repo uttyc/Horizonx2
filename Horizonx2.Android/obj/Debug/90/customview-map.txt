@@ -1,6 +1,5 @@
 @string/appbar_scrolling_view_behavior;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\flyoutcontent.xml
 @string/appbar_scrolling_view_behavior;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\rootlayout.xml
-@string/appbar_scrolling_view_behavior;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\shellcontent.xml
 adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon.xml
 adaptive-icon;obj\Debug\90\res\mipmap-anydpi-v26\icon_round.xml
 alpha;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\anim\enterfromleft.xml
@@ -16,8 +15,6 @@ android.support.design.widget.CoordinatorLayout;D:\Xamarin\Horizonx2\Horizonx2.A
 android.support.design.widget.CoordinatorLayout;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\shellcontent.xml
 android.support.design.widget.TabLayout;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\rootlayout.xml
 android.support.design.widget.TabLayout;obj\Debug\90\res\layout\tabbar.xml
-android.support.v4.widget.NestedScrollView;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\rootlayout.xml
-android.support.v4.widget.NestedScrollView;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\shellcontent.xml
 android.support.v7.widget.RecyclerView;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\flyoutcontent.xml
 android.support.v7.widget.Toolbar;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\rootlayout.xml
 android.support.v7.widget.Toolbar;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\shellcontent.xml
@@ -50,6 +47,7 @@ ImageView;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\0\jl\res\layout
 ImageView;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\0\jl\res\layout\vertical_viewpager.xml
 integer;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values\vpi__defaults.xml
 item;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values\vpi__styles.xml
+item;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\values\styles.xml
 item;obj\Debug\90\res\values\styles.xml
 LinearLayout;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\0\jl\res\layout\horizontal_viewpager.xml
 LinearLayout;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\0\jl\res\layout\vertical_viewpager.xml
@@ -63,6 +61,7 @@ resources;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values
 resources;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values\vpi__colors.xml
 resources;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values\vpi__defaults.xml
 resources;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values\vpi__styles.xml
+resources;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\values\styles.xml
 resources;obj\Debug\90\res\values\colors.xml
 resources;obj\Debug\90\res\values\styles.xml
 scale;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\6\jl\res\anim\flip_in.xml
@@ -86,6 +85,7 @@ set;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\6\jl\res\anim\flip_ou
 string;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\1\jl\res\values\strings.xml
 string;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values\strings.xml
 style;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\2\jl\res\values\vpi__styles.xml
+style;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\values\styles.xml
 style;obj\Debug\90\res\values\styles.xml
 transitionSet;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\6\jl\res\transition\navigation_transition.xml
 translate;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\anim\enterfromleft.xml
@@ -102,3 +102,4 @@ translate;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\6\jl\res\anim\e
 translate;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\6\jl\res\anim\exit_top.xml
 translate;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\6\jl\res\anim\flip_in.xml
 translate;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\6\jl\res\anim\flip_out.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;D:\Xamarin\Horizonx2\Horizonx2.Android\obj\Debug\90\lp\57\jl\res\layout\rootlayout.xml

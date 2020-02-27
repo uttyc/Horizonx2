@@ -1,6 +1,3 @@
-D:\Xamarin\Horizonx2\Horizonx2\bin\Debug\netstandard2.0\Horizonx2.deps.json
-D:\Xamarin\Horizonx2\Horizonx2\bin\Debug\netstandard2.0\Horizonx2.dll
-D:\Xamarin\Horizonx2\Horizonx2\bin\Debug\netstandard2.0\Horizonx2.pdb
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\App.xaml.g.cs
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Favs.xaml.g.cs
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\HeaderContentView.xaml.g.cs
@@ -12,7 +9,10 @@ D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Themes\LightTheme.xaml.g
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Horizonx2.csproj.CoreCompileInputs.cache
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Horizonx2.AssemblyInfoInputs.cache
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Horizonx2.AssemblyInfo.cs
-D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\XamlC.stamp
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Horizonx2.dll
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Horizonx2.pdb
+D:\Xamarin\Horizonx2\Horizonx2\bin\Debug\netstandard2.0\Horizonx2.deps.json
+D:\Xamarin\Horizonx2\Horizonx2\bin\Debug\netstandard2.0\Horizonx2.dll
+D:\Xamarin\Horizonx2\Horizonx2\bin\Debug\netstandard2.0\Horizonx2.pdb
 D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\Horizonx2.csprojAssemblyReference.cache
+D:\Xamarin\Horizonx2\Horizonx2\obj\Debug\netstandard2.0\XamlC.stamp

@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Horizonx2.ThemeSelectPage"
+             Title="Tema Değiştir"
              BackgroundColor="{DynamicResource PageBackgroundColor}"
              Shell.ForegroundColor="{DynamicResource ListViewPrimaryColor}">
     <ContentPage.Content>
