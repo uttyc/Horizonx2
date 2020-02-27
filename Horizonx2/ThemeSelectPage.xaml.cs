@@ -16,7 +16,7 @@ namespace Horizonx2
         public ThemeSelectPage()
         {
             InitializeComponent();
-            var themes = new List<ThemeItem> { new ThemeItem { Theme = "Light", Text = "Açık Tema" }, new ThemeItem { Theme = "Dark Theme", Text = "Koyu Tema" } };
+            var themes = new List<ThemeItem> { new ThemeItem { Theme = "Light", Text = "Açık Tema" }, new ThemeItem { Theme = "Dark", Text = "Koyu Tema" } };
             
             ThemeSelectListView.ItemsSource = themes;
         }

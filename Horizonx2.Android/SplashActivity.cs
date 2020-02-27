@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Horizonx2.Droid
 {
-    [Activity(Label = "SplashActivity", Theme = "@style/Theme.Splash", MainLauncher = true, Icon = "@mipmap/icon")]
+    [Activity(Label = "Tatlı Cümle", Theme = "@style/Theme.Splash", MainLauncher = true, Icon = "@drawable/Splash")]
     public class SplashActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

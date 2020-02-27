@@ -5,14 +5,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Horizonx2.HomePage"
-             BackgroundColor="{DynamicResource PageBackgroundColor}">
-
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Shell.ForegroundColor="{DynamicResource ListViewPrimaryColor}">
+    
     <ContentPage.Content>
         <StackLayout>
             <!--<Button HorizontalOptions="Center" VerticalOptions="Center" Text="Random Entry" Clicked="Button_Clicked"></Button>-->
 
             <ListView x:Name="EntriesList"
-                      VerticalOptions="FillAndExpand" 
+                      VerticalOptions="FillAndExpand"
                       ItemSelected="EntriesList_ItemSelected" 
                       IsPullToRefreshEnabled="True" 
                       HasUnevenRows="true"
@@ -30,7 +31,7 @@
                         </StackLayout>-->
                             <!--<Frame Padding="0" Margin="5" CornerRadius="10" HasShadow="True" BorderColor="{DynamicResource PageBackgroundColor}">-->
                                 <StackLayout Orientation="Horizontal" Margin="2" Padding="0">
-                                    <BoxView Color="{Binding Color}" WidthRequest="10" Margin="0" />
+                                    <BoxView Color="{Binding Color}" WidthRequest="4" Margin="0" />
                                     <Grid VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="{DynamicResource PageBackgroundColor}">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="*"/>

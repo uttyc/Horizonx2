@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Horizonx2.App">
+             x:Class="Horizonx2.App"
+             >
     <Application.Resources>
         <ResourceDictionary Source="Themes/LightTheme.xaml" />
         <Style x:Key="PrimaryButtonStyle" TargetType="Button">
@@ -26,6 +27,7 @@
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="TextColor" Value="{DynamicResource PrimaryTextColor}"/>
         </Style>
+        
         <OnPlatform x:TypeArguments="x:String" x:Key="Source-Sans-Pro">
             <On Platform="Android" Value="source-sans-pro.light.ttf#Source-Sans-Pro" />
             <On Platform="UWP" Value="/Assets/Fonts/source-sans-pro.light.ttf#Source-Sans-Pro" />

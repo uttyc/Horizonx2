@@ -12,6 +12,7 @@ namespace Horizonx2
     public class EksiEntryView : ContentPage
     {
         private readonly EksiEntry _entry;
+        
         public EksiEntryView(EksiEntry entry, bool canBeFavorited)
         {
             _entry = entry;
@@ -19,8 +20,11 @@ namespace Horizonx2
             btnAddToFavs.Clicked += BtnAddToFavs_Clicked;
             var btnRemoveFromFavs = new Button { Text = "Favorilerden Çıkar", TextColor = Color.White, BackgroundColor = Color.Crimson, CornerRadius = 50, Margin = new Thickness(5) };
             btnRemoveFromFavs.Clicked += BtnRemoveFromFavs_Clicked;
+            NavigationPage.SetBackButtonTitle(this, "Geri");
+
             Content = new StackLayout
             {
+                
                 Children = {
                     new StackLayout
                     {
@@ -34,8 +38,10 @@ namespace Horizonx2
                     }
                 },
                 BackgroundColor = (Color) Application.Current.Resources["PageBackgroundColor"]
+                
 
             };
+            
         }
 
         private void BtnRemoveFromFavs_Clicked(object sender, EventArgs e)

@@ -24,6 +24,8 @@ namespace Horizonx2
                 RefreshList();
                 FavList.IsRefreshing = false;
             });
+            //(App.Current.MainPage as NavigationPage).BarTextColor = (Color)App.Current.Resources["ListViewSecondaryColor"];
+            //(App.Current.MainPage as NavigationPage).BarBackgroundColor = (Color)App.Current.Resources["ListViewSecondaryColor"];
             //FavList.ItemTemplate = new DataTemplate(typeof(EntryViewCell));
 
 
@@ -40,8 +42,8 @@ namespace Horizonx2
             //{
             //    con.DeleteAll<EksiEntry>();
             //}
-           // DisplayAlert(entry.Header, entry.Content, "Tamam");
-           Navigation.PushAsync(new EksiEntryView(entry, false));
+            // DisplayAlert(entry.Header, entry.Content, "Tamam");
+            Navigation.PushAsync(new EksiEntryView(entry, false));
 
 
         }

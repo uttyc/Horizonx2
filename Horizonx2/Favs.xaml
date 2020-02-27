@@ -3,14 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:local="clr-namespace:Horizonx2.Views"
              mc:Ignorable="d"
              x:Class="Horizonx2.Favs"
              Title="Favoriler"
-             >
+             Shell.ForegroundColor="{DynamicResource ListViewPrimaryColor}">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="FavList" ItemSelected="FavList_ItemSelected" IsPullToRefreshEnabled="True" HasUnevenRows="True">
+            <ListView x:Name="FavList" ItemSelected="FavList_ItemSelected" IsPullToRefreshEnabled="True" HasUnevenRows="True" BackgroundColor="{DynamicResource PageBackgroundColor}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <!--<TextCell Text="{Binding Header}"
@@ -29,30 +28,30 @@
                                 </StackLayout>
                             </StackLayout>-->
 
-                            <Frame Padding="0" Margin="5" HasShadow="True" CornerRadius="0">
-                                <StackLayout Orientation="Horizontal" Margin="0" Padding="0">
+                            <!--<Frame Padding="0" Margin="5" HasShadow="True" CornerRadius="0">-->
+                                <StackLayout Orientation="Horizontal" Margin="2" Padding="0">
                                     <BoxView Color="Crimson" WidthRequest="4" Margin="0" />
-                                    <Grid VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                    <Grid VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="{DynamicResource PageBackgroundColor}">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="*"/>
                                             <RowDefinition Height="Auto"/>
                                         </Grid.RowDefinitions>
-                                        <Grid Grid.Row="0" VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                        <Grid Grid.Row="0" VerticalOptions="FillAndExpand" Padding="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="{DynamicResource PageBackgroundColor}">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition Height="Auto"/>
                                                 <RowDefinition Height="Auto"/>
                                                 <RowDefinition Height="Auto"/>
                                             </Grid.RowDefinitions>
-                                            <Label FontAttributes="Bold" Grid.Row="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Default" Text="{Binding Header}" Margin="0" />
-                                            <Label Grid.Row="1" VerticalTextAlignment="Start" FontSize="Small" Text="{Binding Author}"  Margin="0" />
+                                            <Label FontAttributes="Bold" Grid.Row="0" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Default" Text="{Binding Header}" TextColor="{DynamicResource ListViewPrimaryColor}" Margin="0" />
+                                            <Label Grid.Row="1" VerticalTextAlignment="Start" FontSize="Small" Text="{Binding Author}" TextColor="{DynamicResource ListViewSecondaryColor}" Margin="0" />
                                             <StackLayout Grid.Row="2" Orientation="Horizontal">
-                                                <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Micro" Text="{Binding Likes}"/>
+                                                <Label HorizontalTextAlignment="Start" VerticalTextAlignment="Center" FontSize="Micro" Text="{Binding Likes}" TextColor="{DynamicResource ListViewSecondaryColor}"/>
                                             </StackLayout>
                                         </Grid>
 
                                     </Grid>
                                 </StackLayout>
-                            </Frame>
+                            <!--</Frame>-->
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

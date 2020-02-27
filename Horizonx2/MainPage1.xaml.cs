@@ -18,12 +18,13 @@ namespace Horizonx2
         {
             InitializeComponent();
             
+            
         }
         protected override bool OnBackButtonPressed()
         {
             Device.BeginInvokeOnMainThread(async () =>
             {
-                var sheet = await DisplayActionSheet("Uygulamayı Terk Etmek İstiyor Musunuz?", "Hayır", "Evet", new string[] { });
+                var sheet = await DisplayActionSheet("Uygulamadan Çıkmak İstiyor Musunuz?", "Hayır", "Evet", new string[] { });
                 switch (sheet)
                 {
                     case "Evet":

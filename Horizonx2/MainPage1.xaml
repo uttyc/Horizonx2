@@ -3,25 +3,34 @@
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     xmlns:local="clr-namespace:Horizonx2"
-    x:Class="Horizonx2.MainPage1">
+    x:Class="Horizonx2.MainPage1"
+    BackgroundColor="{DynamicResource PageBackgroundColor}"
+    FlyoutBackgroundColor="{DynamicResource PageBackgroundColor}">
 
     <Shell.FlyoutHeader>
-        <local:HeaderContentView BackgroundColor="{DynamicResource PrimaryColor}"/>
+        <local:HeaderContentView BackgroundColor="{DynamicResource ListViewSecondaryColor}" />
     </Shell.FlyoutHeader>
+    
+    
+    
 
     <FlyoutItem Title="MyTabApp"
                Shell.TabBarIsVisible="False"
-               FlyoutDisplayOptions="AsMultipleItems">
+               FlyoutDisplayOptions="AsMultipleItems"
+                FlyoutIcon="home.png"
+                >
 
-        <Tab Title="Ana Sayfa">
-            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+        <Tab Title="Ana Sayfa" >
+            <ShellContent  ContentTemplate="{DataTemplate local:HomePage}"/>
         </Tab>
 
 
     </FlyoutItem>
     <FlyoutItem Title="MyTabApp"
                Shell.TabBarIsVisible="False"
-               FlyoutDisplayOptions="AsMultipleItems">
+               FlyoutDisplayOptions="AsMultipleItems"
+                FlyoutIcon="fav.png"
+                >
 
         <Tab Title="Favoriler">
             <ShellContent ContentTemplate="{DataTemplate local:Favs}"/>

@@ -8,5 +8,6 @@ namespace Horizonx2.Models
     {
         public string Theme { get; set; }
         public string Text { get; set; }
+
     }
 }
